@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Tests from "./pages/Tests";
 import ProgrammingTests from "./pages/ProgrammingTests";
+import NetworkTests from "./pages/NetworkTests";
 import TestView from "./pages/TestView";
 import NotFound from "./pages/NotFound";
 
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/tests" element={<Tests />} />
           <Route path="/tests/programming" element={<ProgrammingTests />} />
+          <Route path="/tests/networks" element={<NetworkTests />} />
           <Route path="/test/:testId" element={<TestView />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
